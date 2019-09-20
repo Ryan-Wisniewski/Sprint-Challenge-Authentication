@@ -15,6 +15,7 @@ server.use(express.json());
 
 server.use('/api/auth', authRouter);
 server.use('/api/jokes', authenticate, jokesRouter);
-server.use('/api/users', authenticate, userRouter)
+//cool how that works 
+// server.use('/api/users', authenticate, userRouter)
 
 module.exports = server;
